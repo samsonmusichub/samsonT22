@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samson's Music Hub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+    }
+    header, footer {
+      background-color: #1db954;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1, footer {
+      margin: 0;
+      color: white;
+    }
+    .announcement {
+      background: linear-gradient(90deg, #ffcc00, #ffaa00);
+      color: #111;
+      padding: 12px 20px;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .announcement span {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-left 15s linear infinite;
+    }
+    @keyframes scroll-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    nav {
+      background-color: #222;
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #444;
+    }
+    main {
+      padding: 30px;
+    }
+    .search-bar, .upload-section, .links-section {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      max-width: 800px;
+    }
+    .search-bar input[type="text"], .upload-section input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 4px;
+      border: none;
+    }
+    button {
+      background-color: #1db954;
+      color: white;
+      border: none;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #17a34a;
+    }
+    .links-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .links-section li {
+      margin: 10px 0;
+    }
+    .links-section a {
+      color: #1db954;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    .links-section .logo {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎶 Samson's Music Hub</h1>
+  </header>
+
+  <div class="announcement">
+    <span>🚨 New Release: Samson's Summer Beats 2025 now streaming on all platforms! 🎧🔥</span>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="https://open.spotify.com/" target="_blank">Tracks</a>
+    <a href="https://www.google.com/search?q=music+information" target="_blank">More Info</a>
+    <a href="mailto:admin@samsonmusichub.com">Contact</a>
+  </nav>
+
+  <main>
+    <div class="search-bar">
+      <h2>Search for Music</h2>
+      <form action="https://www.google.com/search" method="GET" target="_blank">
+        <input type="text" name="q" placeholder="Search for songs, artists, genres..." required />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="upload-section">
+      <h2>Create Your Own Music</h2>
+      <label for="upload-audio">Upload Audio:</label>
+      <input type="file" id="upload-audio" accept="audio/*">
+
+      <label for="upload-video">Upload Music Video:</label>
+      <input type="file" id="upload-video" accept="video/*">
+    </div>
+
+    <div class="links-section">
+      <h3>🎧 Studio & Editing Tools</h3>
+      <ul>
+        <li><a href="https://suno.ai" target="_blank"><img src="https://www.suno.ai/favicon.ico" class="logo"> Suno AI</a></li>
+        <li><a href="https://capcut.com" target="_blank"><img src="https://www.capcut.com/favicon.ico" class="logo"> CapCut</a></li>
+        <li><a href="https://adobe.com/products/premiere.html" target="_blank"><img src="https://www.adobe.com/favicon.ico" class="logo"> Premiere Pro</a></li>
+        <li><a href="https://clipchamp.com" target="_blank"><img src="https://clipchamp.com/favicon.ico" class="logo"> Clipchamp</a></li>
+        <li><a href="https://genius.com" target="_blank"><img src="https://genius.com/favicon.ico" class="logo"> Genius</a></li>
+        <li><a href="https://www.billboard.com/charts/hot-100/" target="_blank"><img src="https://www.billboard.com/favicon.ico" class="logo"> Billboard Hot 100</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Samson's Music Hub. All rights reserved.
+  </footer>
+
+</body>
+</html>
